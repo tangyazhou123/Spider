@@ -47,7 +47,7 @@ class BaiduFanyi():
         translate = response['trans_result']['data'][0]['dst']
         print('translate:' + translate)
 
-if '__name__'=='main':
+if __name__=='__main__':
     fanyi = BaiduFanyi('金融')
     fanyi.get_content()
 
