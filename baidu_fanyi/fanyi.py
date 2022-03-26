@@ -23,13 +23,6 @@ class BaiduFanyi():
             'Hm_lvt_64ecd82404c51e03dc91cb9e8c025574': '1648218223,1648262246',
             'Hm_lpvt_64ecd82404c51e03dc91cb9e8c025574': '1648278724',
             'ab_sr': '1.0.1_MDY5OWNlNmNmNjllNGIyNmEyN2MyYWQ4MDUyOGNhMjY1ZThkNzEyMWZjNWZiNjA3YWNhMjRhMjUwYmYwYmMwYjE0ZGI5OTY5Yjc3ODNhZDFkOTY3ODBiNGJlN2NiN2EyZjIyZGVjZGU5ZjgyMWI1ZDRjZmIwZDZmMDM2MDBjMjJiNjNiNWY4ZTFkNjg5ZTE1NWQ4ZWFkOTc3ZWU1YjhiZQ=='}
-    
-    def get_proxy(self):
-        response = requests.get('http://localhost:5555/random')
-        proxy = {
-            'http': 'http://' + response.text,
-        }
-        return proxy
 
     def make_data(self):
         data = {
